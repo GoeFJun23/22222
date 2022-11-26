@@ -169,12 +169,12 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     today = datetime.date(datetime(year=year, month=month, day=day))
     week = week_list[today.isoweekday() % 7]
     # 获取在一起的日子的日期格式
-    love_year = int(config["love_date"].split("-")[0])
-    love_month = int(config["love_date"].split("-")[1])
-    love_day = int(config["love_date"].split("-")[2])
-    love_date = date(love_year, love_month, love_day)
+    acquaintance_year = int(config["acquaintance_date"].split("-")[0])
+    acquaintance_month = int(config["acquaintance_date"].split("-")[1])
+    acquaintance_day = int(config["acquaintance_date"].split("-")[2])
+    acquaintance_date = date(acquaintance_year, acquaintance_month, acquaintance_day)
     # 获取在一起的日期差
-    love_days = str(today.__sub__(love_date)).split(" ")[0]
+    acquaintance_days = str(today.__sub__(acquaintance_date)).split(" ")[0]
     # 获取所有生日数据
     birthdays = {}
     for k, v in config.items():
