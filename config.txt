@@ -1,13 +1,13 @@
 {
 # 公众号配置
 # 公众号appId
-"app_id": "wxec0e41d1d9e1bfff",
+"app_id": "wx9dbe480d9ee10de1",
 # 公众号appSecret
-"app_secret": "e302e95f610c9604a7b21896fe06dd0b",
+"app_secret": "2a91dd336ce4f0f0eab27b406c1cdbbc",
 # 模板消息id
-"template_id": "D6wyJQ8TMXjqKNszrV1i_O3Rnv5JpRsmmDUNtw62l_k",
+"template_id": "efBwi_TsquDipnH12-ZVciL3lmvAq3H5Tco74EqXosY",
 # 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["wx1", "wx2"]
-"user": ["oMF-a5jH85PU7S89-HdFLc7Nt-IE","oMF-a5kiDUOZbqwKTRFgyOLFCy4k"],
+"user": ["oSIsI6j4sAP8C8JBtP4qUIt7kSjU"],
 
 # 信息配置
 # 和风天气apikey
@@ -15,13 +15,9 @@
 # 天行数据apikey
 "tian_api": "e82ce128929cabc293ed3be3eec522d7",
 # 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦(国外城市可能获取不到pm2.5，空气质量，今日建议等数据)
-"region": "南乐县",
-# 生日1
-"birthday1": {"name": "宝宝", "birthday": "r2004-06-23"},
-# 生日2
-"birthday2": {"name": "憨憨", "birthday": "r2003-01-10"},
-# 在一起的日子，格式同上
-"love_date": "2021-12-24",
+"region": "舞阳县",
+# 我们认识的日子，格式同上
+"know_date": "2021-11-26",
 # 金句中文，如果为空，默认会读取金山的每日金句
 "note_ch": "",
 # 金句英文
