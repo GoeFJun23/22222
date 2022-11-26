@@ -168,12 +168,12 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     day = localtime().tm_mday
     today = datetime.date(datetime(year=year, month=month, day=day))
     week = week_list[today.isoweekday() % 7]
-    # 获取相识的日子的日期格式
+    # 获取在一起的日子的日期格式
     acquainted_year = int(config["acquainted_date"].split("-")[0])
     acquainted_month = int(config["acquainted_date"].split("-")[1])
-    acquainted_day = int(config["acquainted_date"].split("-")[2])
-    acquainted_date = date(acquainted_year, acquainted_month, acquainted_day)
-    # 获取相识的日期差
+    acquaintedday = int(config["acquainted_date"].split("-")[2])
+    acquainted_date = date(love_year, love_month, love_day)
+    # 获取在一起的日期差
     acquainted_days = str(today.__sub__(acquainted_date)).split(" ")[0]
     # 获取所有生日数据
     birthdays = {}
@@ -206,7 +206,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": wind_dir,
                 "color": get_color()
             },
-            "acquaintance_day": {
+            "love_day": {
                 "value": acquainted_days,
                 "color": get_color()
             },
