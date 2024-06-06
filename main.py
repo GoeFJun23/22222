@@ -25,7 +25,7 @@ def get_access_token():
         access_token = get(post_url).json()['access_token']
     except KeyError:
         print("获取access_token失败，请检查app_id和app_secret是否正确")
-        input("Press Enter to continue...")
+        os.system("pause")
         sys.exit(1)
     # print(access_token)
     return access_token
@@ -41,11 +41,11 @@ def get_weather(region):
     response = get(region_url, headers=headers).json()
     if response["code"] == "404":
         print("推送消息失败，请检查地区名是否有误！")
-        input("Press Enter to continue...")
+        os.system("pause")
         sys.exit(1)
     elif response["code"] == "401":
         print("推送消息失败，请检查和风天气key是否正确！")
-        input("Press Enter to continue...")
+        os.system("pause")
         sys.exit(1)
     else:
         # 获取地区的location--id
@@ -120,7 +120,7 @@ def get_birthday(birthday, year, today):
             year_date = ZhDate(year, r_mouth, r_day).to_datetime().date()
         except TypeError:
             print("请检查生日的日子是否在今年存在")
-            input("Press Enter to continue...")
+           os.system("pause")
             sys.exit(1)
 
     else:
@@ -310,4 +310,4 @@ if __name__ == "__main__":
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en, max_temp, min_temp, sunrise,
                      sunset, category, pm2p5, proposal, chp)
-    input("Press Enter to continue...")
+    os.system("pause")
