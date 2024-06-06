@@ -310,5 +310,4 @@ if __name__ == "__main__":
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en, max_temp, min_temp, sunrise,
                      sunset, category, pm2p5, proposal, chp)
-    import time
-time.sleep(5)
+    os.system("pause")
